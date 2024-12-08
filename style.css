@@ -1,3 +1,12 @@
+:root{
+    --color-background: hsl( 212, 45%, 89%);
+    --color-primary: hsl( 218, 44%, 22%);
+    --color-secondary: hsl( 216, 15%, 48%);
+    --spacing-200: 16px;
+    --spacing-300: 24;
+    --spacing-500: 40;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background: var(--color-background);
   }
   
   .card {
