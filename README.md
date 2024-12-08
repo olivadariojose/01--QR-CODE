@@ -3,7 +3,7 @@
 Este es el contenido bajo el título principal.
 
 ## Dispostivo Movil
-![movil-resultado-final](./images/movil-final-result.png)
+![movil-resultado-final](./images/movil-final-result.jpg)
 ## Dispostivo Desktop
 ![desktop-resultado-final](./images/desktop-final-result.png)
 
