@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Imagen */
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenido */
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card-description {
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Estilos para pantallas más grandes */
+  @media (min-width: 768px) {
+    .card {
+      flex-direction: row; /* Cambia a dos columnas */
+    }
+  
+    .card-image {
+      flex: 1; /* Imagen ocupa una parte */
+    }
+  
+    .card-content {
+      flex: 2; /* Contenido ocupa más espacio */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px;
+    }
+  
+    .card-title {
+      font-size: 2rem; /* Texto más grande en desktop */
+    }
+  
+    .card-description {
+      font-size: 1.125rem;
+    }
+  }
+  
