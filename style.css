@@ -81,39 +81,6 @@ main {
     font-size: 1rem;
 }
 
-/* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
-    .card {
-        flex-direction: row;
-        /* Cambia a dos columnas */
-    }
-
-    .card-image {
-        flex: 1;
-        /* Imagen ocupa una parte */
-    }
-
-    .card-content {
-        flex: 2;
-        /* Contenido ocupa más espacio */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 24px;
-    }
-
-    .card-title {
-        font-size: 2rem;
-        /* Texto más grande en desktop */
-    }
-
-    .card-description {
-        font-size: 1.125rem;
-
-    }
-}
-
-
 /* Estilos para orientación horizontal en dispositivos móviles */
 @media (orientation: landscape) {
     main {
@@ -145,5 +112,61 @@ main {
 
     .card-description {
         font-size: 1.125rem;
+    }
+}
+
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        
+        /* Cambia a dos columnas */
+    }
+
+    .card-image {
+        flex: 2;
+        /* Imagen ocupa una parte */
+    }
+
+    .card-content {
+        flex: 1;
+        /* Contenido ocupa más espacio */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+    }
+
+    .card-title {
+        font-size: 2rem;
+        /* Texto más grande en desktop */
+    }
+
+    .card-description {
+        font-size: 1.125rem;
+
+    }
+}
+
+
+@media (min-width: 950px) {
+    .card {
+        max-width: 70%;
+        /* max-width: 1000px; Limita el ancho de la tarjeta a 900px o el valor que prefieras */
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        max-width: 50%;
+        /* max-width: 1000px; Limita el ancho de la tarjeta a 900px o el valor que prefieras */
+    }
+}
+
+@media (min-width: 1600px) {
+    .card {
+        max-width: 40%;
+        /* max-width: 1000px; Limita el ancho de la tarjeta a 900px o el valor que prefieras */
     }
 }
